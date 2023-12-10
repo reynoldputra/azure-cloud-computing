@@ -10,4 +10,6 @@ COPY ./FlaskApp /app
 
 ENTRYPOINT [ "python" ]
 
+EXPOSE 5000
+
 CMD ["__init__.py" ]
