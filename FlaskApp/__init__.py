@@ -10,6 +10,10 @@ app = Flask(__name__)
 
 MONGO_URI = os.getenv("MONGO_URI")
 HOST = os.getenv("HOST")
+PORT = os.getenv("PORT")
+
+if PORT is None:
+    PORT = 5000
 
 app.config['MONGO_URI'] = MONGO_URI
 mongo = PyMongo(app)
@@ -71,4 +75,4 @@ def delete_order(order_id):
         return jsonify({"message": "Order not found"}), 404
 
 if __name__ == '__main__':
-    app.run(debug=True, host=HOST)
+    app.run(debug=True, host=HOST, port=PORT)
