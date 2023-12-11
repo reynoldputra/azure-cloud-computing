@@ -11,5 +11,7 @@ COPY ./FlaskApp /app
 ENTRYPOINT [ "python" ]
 
 EXPOSE 5000
+EXPOSE 80
+EXPOSE 443
 
 CMD ["__init__.py" ]
