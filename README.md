@@ -76,7 +76,9 @@ Adapun beberapa benefit yang didapatkan jika menggunakan Container App dari Azur
 - Penggunaan / utilisasi resource yang lebih efisien.
 - Container Apps Azure memiliki integrasi dengan Kubernetes, dengan kata lain dapat di-upscale secara otomatis (membuat replika container dengan scale-rule yang telah ditentukan)
 - Lebih murah dibandingkan dengan VM
-![image](https://github.com/reynoldputra/azure-cloud-computing/assets/87769109/cf7d4612-05ac-4c80-81de-9dee10ef1d36)
+
+![tka cloud architecture drawio](https://github.com/reynoldputra/azure-cloud-computing/assets/112788819/050c3941-5775-439a-9ce6-e14ff7e5c7df)
+
 
 
 ## Langkah Implementasi
@@ -129,7 +131,35 @@ az containerapp update \
 
 ## Hasil Pengujian Enpoint
 
+GET /orders
+
+![image](https://github.com/reynoldputra/azure-cloud-computing/assets/112788819/c8ae4ad1-f85d-4f10-aa1a-d3f6c55945e4)
+
+GET /orders/:id
+
+![image](https://github.com/reynoldputra/azure-cloud-computing/assets/112788819/039b9e33-f1ef-4475-8922-50f4472592ef)
+
+POST /orders
+
+![image](https://github.com/reynoldputra/azure-cloud-computing/assets/112788819/8d5ba59e-6d09-4349-8b7b-c05037f374f9)
+
+PUT /orders/:id
+
+![image](https://github.com/reynoldputra/azure-cloud-computing/assets/112788819/edd7086c-8469-4162-b12e-c3660c3e0ae4)
+
+DELETE /orders/:id
+
+![image](https://github.com/reynoldputra/azure-cloud-computing/assets/112788819/136a7938-0390-40d7-809c-20f28b9d1de5)
+
+
 ## Load Testing
+
+Berikut adalah spreadsheet rincian lengkap hasil percobaan endpoint menggunakan locust
+
+![image](https://github.com/reynoldputra/azure-cloud-computing/assets/112788819/f73b02b7-e3a1-41a2-8c00-bed7e9e5d359)
+
+spreadsheet dapat juga diakses melalui link berikut:
+https://docs.google.com/spreadsheets/d/1xnf9qPY7j4fKis_jZZvuPYcSw2ECi9bnG723CFreYI0/edit#gid=50051680
 
 ### RPS
 | Request | RPS | Fail | Fail % |
