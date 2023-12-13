@@ -128,3 +128,7 @@ az containerapp update \
 ## Hasil Pengujian Enpoint
 
 ## Load Testing
+
+## Pricing
+![image](https://github.com/reynoldputra/azure-cloud-computing/assets/87769109/e41dadb2-3efa-4f81-a638-a463683d0914)
+
