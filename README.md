@@ -128,6 +128,23 @@ az containerapp update \
   --scale-rule-http-concurrency 1
 ```
 - Buat volume mount untuk mongo
+Storage mount dibuat agar azure dapat menyimpan semua data dari server container. Ini dibuat agar data container tidak hilang ketika server mati.
+Pertama, buat storage account.
+
+![Screenshot 2023-12-12 220642](https://github.com/reynoldputra/azure-cloud-computing/assets/100693456/fafd25b6-920f-4fee-947b-63dd80218282)
+
+Ini mengarah ke resource group tka-c3 yang telah dibuat, dengan instance details standard performance dan LRS redundancy.
+
+Selanjutnya, Tambahkan file share yang terletak didalam storage account.
+![Screenshot 2023-12-12 223203](https://github.com/reynoldputra/azure-cloud-computing/assets/100693456/0adb4179-65a1-4e6e-bb32-cec1905b19d7)
+
+![Screenshot 2023-12-13 110543](https://github.com/reynoldputra/azure-cloud-computing/assets/100693456/fdefca82-888f-4222-88d4-fa00137bb71e)
+Setelah itu, buka env dari resource group, buka azure fileshare (di tab settings). Daftarkan fileshare yang telah dibuat kedalam env resource group. (storage account key didapatkan pada storage account ditab security -> access keys)
+![Screenshot 2023-12-13 110640](https://github.com/reynoldputra/azure-cloud-computing/assets/100693456/068039d4-0461-4b4d-8d4c-f949d67f2701)
+
+Setelah itu, Di dalam container app mongodb, pilih tab application -> scale and replicas dan klik edit and deploy. Setelah itu klik mongo di container image. Pilih volume mounts seperti ss dibawah ini :
+
+![Screenshot 2023-12-13 110816](https://github.com/reynoldputra/azure-cloud-computing/assets/100693456/98b4e637-7156-484a-8edd-17128041c427)
 
 ## Hasil Pengujian Enpoint
 
