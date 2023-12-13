@@ -79,17 +79,25 @@ Adapun beberapa benefit yang didapatkan jika menggunakan Container App dari Azur
 
 ## Langkah Implementasi
 - Resource group berguna untuk grouping sumberdaya yang akan digunakan. Dalam kasus ini diberi nama tka-c3-fp.
+![image](https://github.com/reynoldputra/azure-cloud-computing/assets/87769109/c8072e36-d707-4534-8707-e4656d400c60)
 - Buat Container Registry untuk menyimpan hasil image dari Flask
-- Buat virtual network
-- Buat Container App Environment
-  - Virtual Network diekspos secara external sehingga container app dapat diakses secara public menggunakan protocol tcp dan http
-- Buat Container App untuk Mongo DB dengan ENV sebagai berikut
+![image](https://github.com/reynoldputra/azure-cloud-computing/assets/87769109/1a6f76b2-b6ac-431b-b98c-36507f9b8f13)
+- Checkbox "Admin User" pada Access Keys Container Register agar repository dapat dipanggil
+![image](https://github.com/reynoldputra/azure-cloud-computing/assets/87769109/718b0261-3bbf-44c3-929b-ed2e16c3fb61)
+- Buat Virtual network
+![image](https://github.com/reynoldputra/azure-cloud-computing/assets/87769109/037273ea-3ce6-4ff2-8f24-ee08f9fbf15a)
+- Buat Container App untuk Mongo DB dan Container app environment dengan ENV sebagai berikut
   - MONGO_INITDB_ROOT_USERNAME={username_mongo}
   - MONGO_INITDB_ROOT_PASSWORD={password_mongo}
+![image](https://github.com/reynoldputra/azure-cloud-computing/assets/87769109/eb2e06ae-99a1-43f2-affd-2040f27dffbc)
+- Virtual Network diekspos secara external sehingga container app dapat diakses secara public menggunakan protocol tcp dan http
+![image](https://github.com/reynoldputra/azure-cloud-computing/assets/87769109/78a980a9-698b-4d88-a3a1-ad597c5ba663)
 - Buat ContainerApp untuk Flask dengan ENV sebagai berikut
   - MONGO_URI=mongodb://{username_mongo}:{password_mongo}@{container_app_mongo}/db
   - PORT=5000
   - HOST=0.0.0.0
+![image](https://github.com/reynoldputra/azure-cloud-computing/assets/87769109/847ef521-78b0-4c33-a4e7-289bc2aed5f4)
+
 - Atur scale rule pada Mongo
 ```bash
 az containerapp update \
