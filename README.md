@@ -131,6 +131,19 @@ az containerapp update \
 
 ## Load Testing
 
+### RPS
+| Request | RPS | Fail | Fail % |
+|---------|-----|------|--------|
+| 18672   | 311 | 96   | 1.6    |
+| 4269    | 150 | 0    | 0      |
+
+### Peak Concurrent
+| Spawn Rate | Peak Concurreny | Fail | Fail % |
+|------------|-----------------|------|--------|
+| 25         | 1475            | 0    | 0      |
+| 50         | 3000            | 3    | 0      |
+| 100        | 5700            | 0    | 0      |
+
 ## Pricing
 ![image](https://github.com/reynoldputra/azure-cloud-computing/assets/87769109/e41dadb2-3efa-4f81-a638-a463683d0914)
 
