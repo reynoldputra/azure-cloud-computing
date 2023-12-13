@@ -76,6 +76,8 @@ Adapun beberapa benefit yang didapatkan jika menggunakan Container App dari Azur
 - Penggunaan / utilisasi resource yang lebih efisien.
 - Container Apps Azure memiliki integrasi dengan Kubernetes, dengan kata lain dapat di-upscale secara otomatis (membuat replika container dengan scale-rule yang telah ditentukan)
 - Lebih murah dibandingkan dengan VM
+![image](https://github.com/reynoldputra/azure-cloud-computing/assets/87769109/cf7d4612-05ac-4c80-81de-9dee10ef1d36)
+
 
 ## Langkah Implementasi
 - Resource group berguna untuk grouping sumberdaya yang akan digunakan. Dalam kasus ini diberi nama tka-c3-fp.
@@ -132,3 +134,9 @@ az containerapp update \
 ## Pricing
 ![image](https://github.com/reynoldputra/azure-cloud-computing/assets/87769109/e41dadb2-3efa-4f81-a638-a463683d0914)
 
+## Kesimpulan
+- Menggunakan Azure Container Apps mempermudah konfigurasi scalling
+- Biaya lebih murah karna resouse menyesuaikan kebutuhan request
+- Namun tidak dapat menerima request banyak secara tiba tiba (spike request) karena container memebutuhkan waktu untuk membuat replika
+- Tetapi hal ini bisa dihindari dengan membuat spec container yang lebih besar dan jumlah concurrent pada scale rule yang rendah
+- Azure Container Apps cocok digunakan untuk system dengan komputasi rendah, short running, dan jumlah requestnya terprediksi
