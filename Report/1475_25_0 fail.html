@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Test Report for locust.py</title>
+    <title>Test Report for locustfile.py</title>
     <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon"/>
     <style>
         body {
@@ -120,9 +120,9 @@ table.stats tr.total td {
 
         <div class="info">
             
-            <p>During: <span class="l10n datetime">2023-12-13 01:01:48</span> - <span class="l10n datetime">2023-12-13 01:02:48</span></p>
-            <p>Target Host: <span>https://flask-open.bluepebble-b9697553.southeastasia.azurecontainerapps.io</span></p>
-            <p>Script: <span>locust.py</span></p>
+            <p>During: <span class="l10n datetime">2023-12-12 17:51:27</span> - <span class="l10n datetime">2023-12-12 17:52:27</span></p>
+            <p>Target Host: <span>https://flask-open.bluepebble-b9697553.southeastasia.azurecontainerapps.io/</span></p>
+            <p>Script: <span>locustfile.py</span></p>
         </div>
 
         <div class="requests">
@@ -146,40 +146,40 @@ table.stats tr.total td {
                     
                         <tr>
                             <td>GET</td>
-                            <td>/orders</td>
-                            <td>2852</td>
-                            <td>1</td>
-                            <td>637</td>
-                            <td>36</td>
-                            <td>2141</td>
-                            <td>200526</td>
-                            <td>47.5</td>
+                            <td>//orders</td>
+                            <td>1993</td>
+                            <td>0</td>
+                            <td>5248</td>
+                            <td>48</td>
+                            <td>40131</td>
+                            <td>97323</td>
+                            <td>33.2</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr>
                             <td>POST</td>
-                            <td>/orders</td>
-                            <td>2807</td>
+                            <td>//orders</td>
+                            <td>3230</td>
                             <td>0</td>
-                            <td>349</td>
-                            <td>32</td>
-                            <td>2009</td>
+                            <td>1131</td>
+                            <td>33</td>
+                            <td>29177</td>
                             <td>220</td>
-                            <td>46.8</td>
+                            <td>53.9</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr class="total">
                             <td></td>
                             <td>Aggregated</td>
-                            <td>5659</td>
-                            <td>1</td>
-                            <td>494</td>
-                            <td>32</td>
-                            <td>2141</td>
-                            <td>101169</td>
-                            <td>94.3</td>
+                            <td>5223</td>
+                            <td>0</td>
+                            <td>2702</td>
+                            <td>33</td>
+                            <td>40131</td>
+                            <td>37272</td>
+                            <td>87.1</td>
                             <td>0.0</td>
                         </tr>
                     
@@ -208,71 +208,47 @@ table.stats tr.total td {
                     
                         <tr>
                             <td>GET</td>
-                            <td>/orders</td>
-                            <td>580</td>
-                            <td>670</td>
-                            <td>770</td>
-                            <td>920</td>
-                            <td>1100</td>
-                            <td>1300</td>
-                            <td>1700</td>
-                            <td>2100</td>
+                            <td>//orders</td>
+                            <td>3000</td>
+                            <td>4600</td>
+                            <td>6700</td>
+                            <td>9200</td>
+                            <td>13000</td>
+                            <td>17000</td>
+                            <td>26000</td>
+                            <td>40000</td>
                         </tr>
                     
                         <tr>
                             <td>POST</td>
-                            <td>/orders</td>
-                            <td>290</td>
-                            <td>410</td>
-                            <td>540</td>
-                            <td>620</td>
-                            <td>740</td>
+                            <td>//orders</td>
+                            <td>390</td>
+                            <td>560</td>
                             <td>870</td>
-                            <td>1200</td>
-                            <td>2000</td>
+                            <td>1300</td>
+                            <td>3200</td>
+                            <td>5400</td>
+                            <td>9000</td>
+                            <td>29000</td>
                         </tr>
                     
                         <tr class="total">
                             <td></td>
                             <td>Aggregated</td>
-                            <td>490</td>
-                            <td>560</td>
-                            <td>650</td>
-                            <td>760</td>
-                            <td>960</td>
+                            <td>790</td>
                             <td>1200</td>
-                            <td>1600</td>
-                            <td>2100</td>
+                            <td>2300</td>
+                            <td>4400</td>
+                            <td>8300</td>
+                            <td>12000</td>
+                            <td>21000</td>
+                            <td>40000</td>
                         </tr>
                     
                 </tbody>
             </table>
         </div>
 
-        
-            <div class="failures">
-                <h2>Failures Statistics</h2>
-                <table class="stats">
-                    <thead>
-                        <tr>
-                            <th class="sortable">Method</th>
-                            <th class="sortable">Name</th>
-                            <th class="sortable">Error</th>
-                            <th class="sortable">Occurrences</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        
-                            <tr>
-                                <td>GET</td>
-                                <td>/orders</td>
-                                <td>HTTPError(&#x27;500 Server Error: Internal Server Error for url: /orders&#x27;)</td>
-                                <td>1</td>
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
         
 
         
@@ -567,12 +543,12 @@ function fillTasksFromRequest() {
     <script>
         
 var stats_history = {
-    "time": ["01:01:49", "01:01:54", "01:01:59", "01:02:04", "01:02:09", "01:02:14", "01:02:19", "01:02:24", "01:02:29", "01:02:34", "01:02:39", "01:02:44", "01:02:49"].map(server_time => new Date(new Date().setUTCHours(...(server_time.split(":")))).toLocaleTimeString()),
-    "user_count": [{"value": 25}, {"value": 150}, {"value": 275}, {"value": 400}, {"value": 522}, {"value": 650}, {"value": 775}, {"value": 900}, {"value": 1019}, {"value": 1138}, {"value": 1272}, {"value": 1400}, {"value": 1225}],
-    "current_rps": [{"users": 25, "value": 0}, {"users": 150, "value": 15.333333333333334}, {"users": 275, "value": 41.5}, {"users": 400, "value": 77.1}, {"users": 522, "value": 95.9}, {"users": 650, "value": 100.7}, {"users": 775, "value": 101.7}, {"users": 900, "value": 108.3}, {"users": 1019, "value": 103.6}, {"users": 1138, "value": 94.4}, {"users": 1272, "value": 89.0}, {"users": 1400, "value": 92.8}, {"users": 1225, "value": 100.3}],
-    "current_fail_per_sec": [{"users": 25, "value": 0}, {"users": 150, "value": 0}, {"users": 275, "value": 0}, {"users": 400, "value": 0}, {"users": 522, "value": 0}, {"users": 650, "value": 0}, {"users": 775, "value": 0}, {"users": 900, "value": 0.1}, {"users": 1019, "value": 0.1}, {"users": 1138, "value": 0}, {"users": 1272, "value": 0}, {"users": 1400, "value": 0}, {"users": 1225, "value": 0}],
-    "response_time_percentile_1": [{"users": 25, "value": 0}, {"users": 150, "value": 590.0}, {"users": 275, "value": 570.0}, {"users": 400, "value": 560.0}, {"users": 522, "value": 530.0}, {"users": 650, "value": 450.0}, {"users": 775, "value": 380.0}, {"users": 900, "value": 340.0}, {"users": 1019, "value": 440.0}, {"users": 1138, "value": 590.0}, {"users": 1272, "value": 650.0}, {"users": 1400, "value": 610.0}, {"users": 1225, "value": 420.0}],
-    "response_time_percentile_2": [{"users": 25, "value": 0}, {"users": 150, "value": 1400.0}, {"users": 275, "value": 1400.0}, {"users": 400, "value": 1300.0}, {"users": 522, "value": 1200.0}, {"users": 650, "value": 1000.0}, {"users": 775, "value": 1000.0}, {"users": 900, "value": 930.0}, {"users": 1019, "value": 1000.0}, {"users": 1138, "value": 1200.0}, {"users": 1272, "value": 1400.0}, {"users": 1400, "value": 1400.0}, {"users": 1225, "value": 1200.0}],
+    "time": ["17:51:31", "17:51:36", "17:51:41", "17:51:46", "17:51:51", "17:51:56", "17:52:01", "17:52:06", "17:52:11", "17:52:16", "17:52:21", "17:52:26"].map(server_time => new Date(new Date().setUTCHours(...(server_time.split(":")))).toLocaleTimeString()),
+    "user_count": [{"value": 100}, {"value": 225}, {"value": 350}, {"value": 475}, {"value": 600}, {"value": 725}, {"value": 840}, {"value": 975}, {"value": 1100}, {"value": 1225}, {"value": 1350}, {"value": 1475}],
+    "current_rps": [{"users": 100, "value": 0}, {"users": 225, "value": 40.714285714285715}, {"users": 350, "value": 67.7}, {"users": 475, "value": 87.4}, {"users": 600, "value": 68.8}, {"users": 725, "value": 44.7}, {"users": 840, "value": 76.3}, {"users": 975, "value": 111.9}, {"users": 1100, "value": 116.8}, {"users": 1225, "value": 115.0}, {"users": 1350, "value": 101.5}, {"users": 1475, "value": 92.2}],
+    "current_fail_per_sec": [{"users": 100, "value": 0}, {"users": 225, "value": 0}, {"users": 350, "value": 0}, {"users": 475, "value": 0}, {"users": 600, "value": 0}, {"users": 725, "value": 0}, {"users": 840, "value": 0}, {"users": 975, "value": 0}, {"users": 1100, "value": 0}, {"users": 1225, "value": 0}, {"users": 1350, "value": 0}, {"users": 1475, "value": 0}],
+    "response_time_percentile_1": [{"users": 100, "value": 420.0}, {"users": 225, "value": 390.0}, {"users": 350, "value": 400.0}, {"users": 475, "value": 700.0}, {"users": 600, "value": 1500.0}, {"users": 725, "value": 3500.0}, {"users": 840, "value": 4400.0}, {"users": 975, "value": 1400.0}, {"users": 1100, "value": 550.0}, {"users": 1225, "value": 350.0}, {"users": 1350, "value": 380.0}, {"users": 1475, "value": 430.0}],
+    "response_time_percentile_2": [{"users": 100, "value": 940.0}, {"users": 225, "value": 1100.0}, {"users": 350, "value": 1300.0}, {"users": 475, "value": 3000.0}, {"users": 600, "value": 4800.0}, {"users": 725, "value": 11000.0}, {"users": 840, "value": 12000.0}, {"users": 975, "value": 12000.0}, {"users": 1100, "value": 11000.0}, {"users": 1225, "value": 12000.0}, {"users": 1350, "value": 14000.0}, {"users": 1475, "value": 18000.0}],
     "markers": [],
 };
         var percentile1 = 0.5
