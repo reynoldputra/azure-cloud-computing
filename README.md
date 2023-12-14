@@ -68,6 +68,9 @@ Kemudian anda diminta untuk mendesain arsitektur cloud yang sesuai dengan kebutu
 - Komputasi yang dibutuhkan cukup rendah sehingga tidak membutuh spec machine yang tinggi.
 - Hipotesis : Menggunakan spec machine rendah namun dapat melakukan scale out secara horizontal untuk mendukung concurrent request
 ## Arsitektur
+
+![tka cloud architecture drawio](https://github.com/reynoldputra/azure-cloud-computing/assets/112788819/050c3941-5775-439a-9ce6-e14ff7e5c7df)
+
 Untuk membangun arsitektur microservices dengan topologi seperti di atas digunakan platform Microsoft Azure dengan Student Subscription senilai $100. 
 
 Dikarenakan sistem billing Microsoft Azure menggunakan sistem **pay-as-you-go**, dan mengingat bahwa VM independen memiliki harga yang cukup mahal, maka diputuskan untuk menggunakan Container App yang ada di Azure.
@@ -76,9 +79,6 @@ Adapun beberapa benefit yang didapatkan jika menggunakan Container App dari Azur
 - Penggunaan / utilisasi resource yang lebih efisien.
 - Container Apps Azure memiliki integrasi dengan Kubernetes, dengan kata lain dapat di-upscale secara otomatis (membuat replika container dengan scale-rule yang telah ditentukan)
 - Lebih murah dibandingkan dengan VM
-
-![tka cloud architecture drawio](https://github.com/reynoldputra/azure-cloud-computing/assets/112788819/050c3941-5775-439a-9ce6-e14ff7e5c7df)
-
 
 
 ## Langkah Implementasi
@@ -192,7 +192,8 @@ https://docs.google.com/spreadsheets/d/1xnf9qPY7j4fKis_jZZvuPYcSw2ECi9bnG723CFre
 | 100        | 5700            | 0    | 0      |
 
 ## Pricing
-![image](https://github.com/reynoldputra/azure-cloud-computing/assets/87769109/e41dadb2-3efa-4f81-a638-a463683d0914)
+![image](https://github.com/reynoldputra/azure-cloud-computing/assets/87769109/d388a2f8-1f18-440f-bfd0-c9aeba69884d)
+
 
 ## Kesimpulan
 - Menggunakan Azure Container Apps mempermudah konfigurasi scalling
